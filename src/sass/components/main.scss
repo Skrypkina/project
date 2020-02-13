@@ -1,0 +1,141 @@
+// styles for image collection
+.container {
+  width: 320px;
+  text-align: center;
+  padding: 50px 10px 10px 10px;
+}
+
+.image-container__wrapper {
+  display: block;
+  width: 200px;
+  height: 250px;
+  background-image: url("../images/bg-pattern.png");
+  position: relative;
+}
+
+.image-container__gif {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  object-fit: contain;
+}
+.image-container__par {
+  padding: 0;
+  margin: 0;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $main-background;
+  padding: 5px;
+  z-index: 1;
+}
+.images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.paragraph {
+  padding: 0;
+  margin: 0;
+  color: $main-font-color;
+  font-family: $main-font-stack;
+}
+
+.img-button {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/info\ circle\ solid.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  border: transparent;
+  outline: none;
+  z-index: 99;
+}
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: $overlay-background;
+  width: 100%;
+  height: 92%;
+}
+.overlay-par {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 70px;
+  font-size: 16px;
+  color: $main-font-color;
+  margin-bottom: 20px;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 35%;
+  opacity: 0;
+}
+.image-container {
+  display: none;
+  width: 0;
+}
+.overlay-btn {
+  font-size: 16px;
+  color: $main-font-color;
+  width: 70px;
+  border: 1px solid transparent;
+  padding: 5px;
+  background-color: $main-background;
+  outline: none;
+  position: absolute;
+  top: 40%;
+  right: 33%;
+  opacity: 0;
+}
+
+.active {
+  opacity: 1;
+}
+// styles for form
+
+input {
+  width: 250px;
+  height: 30px;
+  border: 1px solid $input-border-color;
+  padding-left: 10px;
+  font-size: 12px;
+}
+.form-button {
+  display: block;
+  width: 40px;
+  height: 30px;
+  background-color: $main-background;
+  color: $main-font-color;
+  outline: none;
+  border: transparent;
+}
+.form {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 900px;
+    justify-content: center;
+  }
+
+  .images {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 860px;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: unset;
+    justify-content: space-between;
+  }
+}
