@@ -13,8 +13,6 @@ images.addEventListener("click", handleClick);
 
 function handleClick(e) {
   e.preventDefault();
-  // console.log(e.target.parentNode.parentNode.children[3]);
-  // console.log(e.target.parentNode.parentNode.children[4].firstElementChild);
   if (e.target.nodeName === "BUTTON") {
     const par = e.target.parentNode.parentNode.children[3];
     const link = e.target.parentNode.parentNode.children[4].firstElementChild;
